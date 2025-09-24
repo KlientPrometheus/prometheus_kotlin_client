@@ -1,5 +1,5 @@
-import io.github.rxfa.prometheus.core.CollectorRegistry
-import io.github.rxfa.prometheus.core.Counter
+import io.github.klient.prometheus.core.CollectorRegistry
+import io.github.klient.prometheus.core.Counter
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
 import kotlin.test.assertEquals

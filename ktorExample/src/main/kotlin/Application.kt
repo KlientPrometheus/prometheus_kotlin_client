@@ -1,7 +1,7 @@
-package io.github.rxfa.prometheus.ktorExample
+package io.github.klient.prometheus.ktorExample
 
 import configureRouting
-import io.github.rxfa.prometheus.ktor.installPrometheusMetrics
+import io.github.klient.prometheus.ktor.installPrometheusMetrics
 import io.ktor.server.application.Application
 import simulateTrafficLoad
 

@@ -1,4 +1,4 @@
-package io.github.rxfa.prometheus.core
+package io.github.klient.prometheus.core
 
 /**
  * Exports Prometheus metrics from a [CollectorRegistry] in the Prometheus text exposition format.

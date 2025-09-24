@@ -1,5 +1,5 @@
-import io.github.rxfa.prometheus.core.CollectorRegistry
-import io.github.rxfa.prometheus.ktor.installPrometheusMetrics
+import io.github.klient.prometheus.core.CollectorRegistry
+import io.github.klient.prometheus.ktor.installPrometheusMetrics
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.HttpStatusCode

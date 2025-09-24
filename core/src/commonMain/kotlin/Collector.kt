@@ -1,4 +1,4 @@
-package io.github.rxfa.prometheus.core
+package io.github.klient.prometheus.core
 
 /**
  * Abstract base class for all Prometheus metric collectors.

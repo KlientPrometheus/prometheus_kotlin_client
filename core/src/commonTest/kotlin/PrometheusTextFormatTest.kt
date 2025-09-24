@@ -1,5 +1,5 @@
-import io.github.rxfa.prometheus.core.Counter
-import io.github.rxfa.prometheus.core.PrometheusTextFormat
+import io.github.klient.prometheus.core.Counter
+import io.github.klient.prometheus.core.PrometheusTextFormat
 import kotlinx.coroutines.test.runTest
 import kotlin.test.Test
 import kotlin.test.assertEquals

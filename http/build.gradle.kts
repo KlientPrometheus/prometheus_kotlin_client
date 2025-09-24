@@ -3,7 +3,7 @@ plugins {
     id("com.vanniktech.maven.publish") version "0.34.0"
 }
 
-group = "io.github.rxfa"
+group = "io.github.klient"
 version = "0.0.1"
 
 repositories {
@@ -41,7 +41,7 @@ mavenPublishing {
         name = "Prometheus HTTP"
         description = "A lightweight HTTP server implementation for exposing Prometheus-compatible metrics."
         inceptionYear = "2025"
-        url = "https://github.com/Rxfa/prometheus_kotlin_client/"
+        url = "https://github.com/KlientPrometheus/prometheus_kotlin_client/"
         licenses {
             license {
                 name = "The Apache License, Version 2.0"
@@ -51,9 +51,9 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "Rxfa"
+                id = "KlientPrometheus"
                 name = "Rafael Nicolau"
-                url = "https://github.com/Rxfa"
+                url = "https://github.com/KlientPrometheus"
             }
             developer {
                 id = "MarioRJ16"
@@ -62,9 +62,9 @@ mavenPublishing {
             }
         }
         scm {
-            url = "https://github.com/Rxfa/prometheus_kotlin_client"
-            connection = "scm:git:git://github.com/Rxfa/prometheus_kotlin_client.git"
-            developerConnection = "scm:git:ssh://git@github.com/Rxfa/prometheus_kotlin_client.git"
+            url = "https://github.com/KlientPrometheus/prometheus_kotlin_client"
+            connection = "scm:git:git://github.com/KlientPrometheus/prometheus_kotlin_client.git"
+            developerConnection = "scm:git:ssh://git@github.com/KlientPrometheus/prometheus_kotlin_client.git"
         }
     }
 }

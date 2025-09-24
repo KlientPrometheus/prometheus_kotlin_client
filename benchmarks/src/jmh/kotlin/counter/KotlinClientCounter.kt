@@ -1,7 +1,7 @@
 package counter
 
-import io.github.rxfa.prometheus.core.Counter
-import io.github.rxfa.prometheus.core.counter
+import io.github.klient.prometheus.core.Counter
+import io.github.klient.prometheus.core.counter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

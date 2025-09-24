@@ -1,4 +1,4 @@
-import io.github.rxfa.prometheus.core.SimpleCollector
+import io.github.klient.prometheus.core.SimpleCollector
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith

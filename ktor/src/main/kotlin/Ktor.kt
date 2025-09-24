@@ -1,15 +1,15 @@
-package io.github.rxfa.prometheus.ktor
+package io.github.klient.prometheus.ktor
 
-import io.github.rxfa.prometheus.core.CollectorRegistry
-import io.github.rxfa.prometheus.core.PrometheusExporter
-import io.github.rxfa.prometheus.core.counter
-import io.github.rxfa.prometheus.core.exponentialHistogramBuckets
-import io.github.rxfa.prometheus.core.gauge
-import io.github.rxfa.prometheus.core.histogram
-import io.github.rxfa.prometheus.core.linearHistogramBuckets
-import io.github.rxfa.prometheus.core.quantile
-import io.github.rxfa.prometheus.core.quantiles
-import io.github.rxfa.prometheus.core.summary
+import io.github.klient.prometheus.core.CollectorRegistry
+import io.github.klient.prometheus.core.PrometheusExporter
+import io.github.klient.prometheus.core.counter
+import io.github.klient.prometheus.core.exponentialHistogramBuckets
+import io.github.klient.prometheus.core.gauge
+import io.github.klient.prometheus.core.histogram
+import io.github.klient.prometheus.core.linearHistogramBuckets
+import io.github.klient.prometheus.core.quantile
+import io.github.klient.prometheus.core.quantiles
+import io.github.klient.prometheus.core.summary
 import io.ktor.http.ContentType
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.Application

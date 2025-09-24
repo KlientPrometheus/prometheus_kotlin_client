@@ -1,7 +1,7 @@
-import io.github.rxfa.prometheus.core.Gauge
-import io.github.rxfa.prometheus.core.getCurrentSeconds
-import io.github.rxfa.prometheus.core.setDuration
-import io.github.rxfa.prometheus.core.track
+import io.github.klient.prometheus.core.Gauge
+import io.github.klient.prometheus.core.getCurrentSeconds
+import io.github.klient.prometheus.core.setDuration
+import io.github.klient.prometheus.core.track
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.channels.Channel

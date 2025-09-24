@@ -58,13 +58,13 @@ The Prometheus Kotlin Client makes observability in Kotlin applications feel nat
 
 ```kotlin
 dependencies {
-    implementation("io.github.rxfa.prometheus:core:<version>")
+    implementation("io.github.klient.prometheus:core:<version>")
     
     // Optional: add for Ktor-based applications
-    implementation("io.github.rxfa.prometheus:ktor:<version>")
+    implementation("io.github.klient.prometheus:ktor:<version>")
     
     // Optional: add for standalone HTTP exposition
-    implementation("io.github.rxfa.prometheus:http:<version>")
+    implementation("io.github.klient.prometheus:http:<version>")
 }
 ```
 ## Define Metrics
@@ -86,7 +86,7 @@ You have two main options:
 
 If you are using Ktor, the library offers a seamless integration:
 ```kotlin
-import io.github.rxfa.prometheus.ktor.installPrometheusMetrics
+import io.github.klient.prometheus.ktor.installPrometheusMetrics
 import io.ktor.server.application.Application
 
 fun main(args: Array<String>) {
@@ -107,7 +107,7 @@ fun Application.module() {
 
 If you are not using Ktor or any other supported web framework, you can use the standalone HTTP server:
 ```
-import io.github.rxfa.prometheus.http.httpServer
+import io.github.klient.prometheus.http.httpServer
 
 fun main() {
     startMetricsHttpServer{

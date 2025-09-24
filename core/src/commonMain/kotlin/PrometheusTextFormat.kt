@@ -1,4 +1,4 @@
-package io.github.rxfa.prometheus.core
+package io.github.klient.prometheus.core
 
 /**
  * A Prometheus text format encoder (version 0.0.4).

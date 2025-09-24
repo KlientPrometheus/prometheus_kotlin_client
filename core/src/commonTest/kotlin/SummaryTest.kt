@@ -1,8 +1,8 @@
 
-import io.github.rxfa.prometheus.core.quantile
-import io.github.rxfa.prometheus.core.quantiles
-import io.github.rxfa.prometheus.core.summary
-import io.github.rxfa.prometheus.core.summaryQuantiles
+import io.github.klient.prometheus.core.quantile
+import io.github.klient.prometheus.core.quantiles
+import io.github.klient.prometheus.core.summary
+import io.github.klient.prometheus.core.summaryQuantiles
 import kotlinx.coroutines.Runnable
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay

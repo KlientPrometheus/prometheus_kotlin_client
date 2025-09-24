@@ -1,5 +1,5 @@
-import io.github.rxfa.prometheus.core.Counter
-import io.github.rxfa.prometheus.core.countExceptions
+import io.github.klient.prometheus.core.Counter
+import io.github.klient.prometheus.core.countExceptions
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope

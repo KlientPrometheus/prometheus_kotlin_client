@@ -1,9 +1,9 @@
 package summary
 
-import io.github.rxfa.prometheus.core.Summary
-import io.github.rxfa.prometheus.core.quantile
-import io.github.rxfa.prometheus.core.quantiles
-import io.github.rxfa.prometheus.core.summaryQuantiles
+import io.github.klient.prometheus.core.Summary
+import io.github.klient.prometheus.core.quantile
+import io.github.klient.prometheus.core.quantiles
+import io.github.klient.prometheus.core.summaryQuantiles
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

@@ -447,7 +447,7 @@ To simulate asynchronous environments, both clients used a shared \texttt{Channe
 
 \textbf{Java Client}: Used the official Prometheus Java library (\texttt{io.prometheus.client.Counter}). Metrics were created and registered globally with a background coroutine processing increment requests.
 
-\textbf{Kotlin Client}: Used our own DSL-based Kotlin implementation (\texttt{io.github.rxfa.prometheus.core.Counter}). The setup mirrors the Java version, including coroutine usage and buffering strategy.
+\textbf{Kotlin Client}: Used our own DSL-based Kotlin implementation (\texttt{io.github.klient.prometheus.core.Counter}). The setup mirrors the Java version, including coroutine usage and buffering strategy.
 
 \subsection*{Results Overview}
 

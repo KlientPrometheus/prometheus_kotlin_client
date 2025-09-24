@@ -1,7 +1,7 @@
 package gauge
 
-import io.github.rxfa.prometheus.core.Gauge
-import io.github.rxfa.prometheus.core.gauge
+import io.github.klient.prometheus.core.Gauge
+import io.github.klient.prometheus.core.gauge
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

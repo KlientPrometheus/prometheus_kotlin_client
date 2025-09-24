@@ -1,7 +1,7 @@
 package histogram
 
-import io.github.rxfa.prometheus.core.Histogram
-import io.github.rxfa.prometheus.core.histogramBuckets
+import io.github.klient.prometheus.core.Histogram
+import io.github.klient.prometheus.core.histogramBuckets
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

@@ -1,4 +1,4 @@
-package io.github.rxfa.prometheus.core
+package io.github.klient.prometheus.core
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex

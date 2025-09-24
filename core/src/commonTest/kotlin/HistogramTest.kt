@@ -1,6 +1,6 @@
 
-import io.github.rxfa.prometheus.core.histogramBuckets
-import io.github.rxfa.prometheus.core.linearHistogramBuckets
+import io.github.klient.prometheus.core.histogramBuckets
+import io.github.klient.prometheus.core.linearHistogramBuckets
 import kotlinx.coroutines.Runnable
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope

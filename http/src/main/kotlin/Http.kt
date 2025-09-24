@@ -1,6 +1,6 @@
-package io.github.rxfa.prometheus.http
+package io.github.klient.prometheus.http
 
-import io.github.rxfa.prometheus.ktor.installPrometheusMetrics
+import io.github.klient.prometheus.ktor.installPrometheusMetrics
 import io.ktor.server.engine.EmbeddedServer
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty

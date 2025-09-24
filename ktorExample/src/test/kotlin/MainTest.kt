@@ -1,4 +1,4 @@
-import io.github.rxfa.prometheus.ktor.installPrometheusMetrics
+import io.github.klient.prometheus.ktor.installPrometheusMetrics
 import io.ktor.server.testing.testApplication
 import kotlin.test.Test
 

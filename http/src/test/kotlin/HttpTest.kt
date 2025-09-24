@@ -1,5 +1,5 @@
-import io.github.rxfa.prometheus.core.CollectorRegistry
-import io.github.rxfa.prometheus.http.httpServer
+import io.github.klient.prometheus.core.CollectorRegistry
+import io.github.klient.prometheus.http.httpServer
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
 import io.ktor.client.request.get
