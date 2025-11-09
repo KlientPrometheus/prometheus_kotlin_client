@@ -83,9 +83,9 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "KlientPrometheus"
+                id = "Rxfa"
                 name = "Rafael Nicolau"
-                url = "https://github.com/KlientPrometheus"
+                url = "https://github.com/Rxfa"
             }
             developer {
                 id = "MarioRJ16"
