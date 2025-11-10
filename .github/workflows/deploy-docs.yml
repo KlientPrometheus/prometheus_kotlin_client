@@ -1,0 +1,52 @@
+name: Deploy Dokka docs to GitHub Pages
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '21'
+
+      - name: Build Dokka HTML docs
+        run: ./gradlew dokkaHtmlMultiModule
+
+      - name: Prepare versioned docs
+        run: |
+          VERSION=${GITHUB_REF_NAME}
+          mkdir -p docs/$VERSION
+          cp -r build/dokka/htmlMultiModule/* docs/$VERSION/
+          # Optionally update "latest" docs
+          rm -rf docs/latest
+          cp -r build/dokka/htmlMultiModule docs/latest
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

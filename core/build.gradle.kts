@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     id("com.vanniktech.maven.publish") version "0.34.0"
+    id("org.jetbrains.dokka") version "2.0.0"
 }
 
 group = "io.github.klient"
@@ -83,9 +84,9 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "KlientPrometheus"
+                id = "Rxfa"
                 name = "Rafael Nicolau"
-                url = "https://github.com/KlientPrometheus"
+                url = "https://github.com/Rxfa"
             }
             developer {
                 id = "MarioRJ16"
