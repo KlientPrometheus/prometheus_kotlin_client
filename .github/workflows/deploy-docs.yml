@@ -26,14 +26,10 @@ jobs:
       - name: Build Dokka HTML docs
         run: ./gradlew dokkaHtmlMultiModule
 
-      - name: Prepare versioned docs
+      - name: Prepare docs
         run: |
-          VERSION=${GITHUB_REF_NAME}
-          mkdir -p docs/$VERSION
-          cp -r build/dokka/htmlMultiModule/* docs/$VERSION/
-          # Optionally update "latest" docs
-          rm -rf docs/latest
-          cp -r build/dokka/htmlMultiModule docs/latest
+          rm -rf docs
+          cp -r build/dokka/htmlMultiModule/* docs/
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
