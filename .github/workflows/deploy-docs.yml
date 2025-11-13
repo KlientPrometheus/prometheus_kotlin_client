@@ -4,13 +4,8 @@ on:
   release:
     types: [published]
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,27 +21,14 @@ jobs:
       - name: Build Dokka HTML docs
         run: ./gradlew dokkaHtmlMultiModule
 
-      - name: Prepare versioned docs
-        run: |
-          VERSION=${GITHUB_REF_NAME}
-          mkdir -p docs/$VERSION
-          cp -r build/dokka/htmlMultiModule/* docs/$VERSION/
-          # Optionally update "latest" docs
-          rm -rf docs/latest
-          cp -r build/dokka/htmlMultiModule docs/latest
-
-      - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: ${{ github.event.head_commit.message }}
+          external_repository: "KlientPrometheus/KlientPrometheus.github.io"
+          publish_branch: 'main'
+          publish_dir: ./build/dokka/htmlMultiModule
+          destination_dir: .

@@ -184,6 +184,10 @@ requestLatency.observe(1.2)
 Feel free to create your own custom metric types by inheriting the appropriate classes (**SimpleCollector** or 
 **Collector**).
 
+## Documentation
+
+The full API reference is generated with [Dokka](https://kotlinlang.org/docs/dokka.html) and is available at [https://klientprometheus.github.io](https://klientprometheus.github.io)
+
 ## Demos
 
 Want to see the Prometheus Kotlin Client in action? We've included a complete example in the [`ktor-example`](./ktor-example) module.
